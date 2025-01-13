@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona FC News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004d98;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news {
+            margin-bottom: 2rem;
+        }
+        .news h2 {
+            color: #004d98;
+        }
+        .comments {
+            margin-top: 1rem;
+        }
+        .comments form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        .comments input, .comments textarea {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .comments button {
+            padding: 0.5rem;
+            background-color: #004d98;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .comments button:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Barcelona FC News</h1>
+        <p>The latest updates, match results, and more about Barcelona FC.</p>
+    </header>
+    <nav>
+        <a href="#news">News</a>
+        <a href="#results">Match Results</a>
+        <a href="#comments">Comments</a>
+    </nav>
+    <div class="container">
+        <section id="news" class="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Barcelona Wins El Clasico!</h3>
+                <p>Barcelona defeated Real Madrid 5-2 in an exciting El Clasico match. Stay tuned for more details!</p>
+            </article>
+            <article>
+                <h3>New Signing Announced</h3>
+                <p>Barcelona FC has officially signed a new striker to strengthen their squad. More updates coming soon!</p>
+            </article>
+        </section>
+        <section id="results" class="results">
+            <h2>Match Results</h2>
+            <ul>
+                <li>Barcelona 5-2 Real Madrid (January 12, 2025)</li>
+                <li>Barcelona 3-0 Atletico Madrid (January 7, 2025)</li>
+            </ul>
+        </section>
+        <section id="comments" class="comments">
+            <h2>Leave a Comment</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <textarea id="comment" name="comment" rows="4" placeholder="Your Comment" required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Barcelona FC News | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
